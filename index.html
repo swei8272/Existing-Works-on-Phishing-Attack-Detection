@@ -1,26 +1,47 @@
 <!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>A field guide to phishing research</title><style>
-*{box-sizing:border-box}body{margin:0;background:#faf8f2;color:#203936;font:17px/1.55 'Source Sans 3',system-ui,sans-serif}main{max-width:61rem;margin:auto;padding:clamp(1rem,5vw,4rem)}h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;line-height:1.12}h1{font-size:clamp(2.8rem,7vw,5rem);max-width:12em;margin:.5em 0}h2{font-size:2rem;margin:1.5em 0 .4em}a{color:#085c59;text-underline-offset:.18em}summary{cursor:pointer;font-weight:650;padding:.55em 0}details,article{border-bottom:1px solid #c8cfc4}article{padding:1em 0}article h3{margin:.15em 0;font-size:1.25rem}article p{font-size:.93rem;margin:.35em 0}small{color:#50635d}label{display:grid;gap:.3em;font-size:.9rem;font-weight:600}section.controls{display:flex;gap:1em;flex-wrap:wrap}input,select{max-width:100%;padding:.65em;font:inherit;color:inherit;border:1px solid #77938a;background:white;border-radius:4px}details p{margin:.2em 0}footer{margin:2em 0}</style><main><h1>A field guide to phishing research</h1><p>Explore how researchers recognize suspicious addresses, identify impersonated brands and study the people behind phishing decisions.</p><h2>Start with a question</h2>
-<details><summary>How do phishing sites persuade people?</summary><p>Read the original user study, then compare its findings with the longer review of how phishing experiments are designed.</p><ol>
+*{box-sizing:border-box}body{margin:0;background:#faf8f2;color:#203936;font:17px/1.55 'Source Sans 3',system-ui,sans-serif}main{max-width:61rem;margin:auto;padding:clamp(1rem,5vw,4rem)}h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;line-height:1.12}h1{font-size:clamp(2.8rem,7vw,5rem);max-width:12em;margin:.5em 0}h2{font-size:2rem;margin:1.5em 0 .4em}a{color:#085c59;text-underline-offset:.18em}summary{cursor:pointer;font-weight:650;padding:.55em 0}details,article{border-bottom:1px solid #c8cfc4}article{padding:1em 0}article h3{margin:.15em 0;font-size:1.25rem}article p{font-size:.93rem;margin:.35em 0}small{color:#50635d}label{display:grid;gap:.3em;font-size:.9rem;font-weight:600}section.controls{display:flex;gap:1em;flex-wrap:wrap}input,select{max-width:100%;padding:.65em;font:inherit;color:inherit;border:1px solid #77938a;background:white;border-radius:4px}details p{margin:.2em 0}footer{margin:2em 0}
+:root{font-size:112.5%;color-scheme:light}
+body{font-size:1rem;line-height:1.65;background:#f7f5ed}
+main{max-width:58rem;padding:clamp(1rem,4vw,3rem)}
+header{background:#123e3a;color:#fffaf0;border-top:.4rem solid #dfa955;border-radius:.4rem;padding:clamp(1.25rem,4vw,3rem)}
+header h1{font-size:clamp(2.35rem,6vw,4.3rem);margin:0;max-width:15ch}
+header p{max-width:58ch;margin:1rem 0 0;color:#e3efdf}
+h2{font-size:clamp(1.65rem,4vw,2.25rem)}
+details{background:#fffef9;border:1px solid #c1cdc3;border-radius:.4rem;margin:.5rem 0;padding:.2rem 1rem}
+details[open]{padding-bottom:.65rem}
+summary{font-size:1.08rem}
+.controls{background:#e4eee6;border-radius:.4rem;padding:1rem}
+.controls label{flex:1 1 15rem;min-width:0;font-size:1rem}
+input,select{width:100%;min-width:0}
+article{padding:1.15rem 0;overflow-wrap:anywhere}
+article h3{font-size:clamp(1.22rem,2.6vw,1.46rem);line-height:1.32;max-width:58ch;margin:.3rem 0}
+article p,footer{font-size:1rem}
+article small{font-size:.94rem;line-height:1.5;display:block}
+article small:last-child{color:#345b4d}
+:focus-visible{outline:3px solid #995400;outline-offset:3px}
+@media(max-width:38rem){:root{font-size:106.25%}header{padding:1.2rem}main{padding:.85rem}summary{line-height:1.45}}
+</style><main><header><h1>A field guide to phishing research</h1><p>Explore how researchers recognize suspicious addresses, identify impersonated brands and study the people behind phishing decisions.</p></header><h2><span aria-hidden="true">🧭</span> Start with a question</h2>
+<details><summary><span aria-hidden="true">👥</span> How do phishing sites persuade people?</summary><p>Read the original user study, then compare its findings with the longer review of how phishing experiments are designed.</p><ol>
 <li><a href="https://doi.org/10.1145/1124772.1124861">Why phishing works</a></li>
 <li><a href="https://doi.org/10.1109/tdsc.2022.3151103">Sixteen Years of Phishing User Studies: What Have We Learned?</a></li>
 </ol></details>
-<details><summary>What can a detector see?</summary><p>Compare page content, URL characters, visual similarity and page interaction. For each paper, write down the minimum input needed for one prediction.</p><ol>
+<details><summary><span aria-hidden="true">👁️</span> What can a detector see?</summary><p>Compare page content, URL characters, visual similarity and page interaction. For each paper, write down the minimum input needed for one prediction.</p><ol>
 <li><a href="https://doi.org/10.1145/1242572.1242659">Cantina: a content-based approach to detecting phishing web sites</a></li>
 <li><a href="https://arxiv.org/abs/1802.03162">URLNet: Learning a URL Representation with Deep Learning for Malicious URL Detection</a></li>
 <li><a href="https://doi.org/10.1145/3372297.3417233">VisualPhishNet: Zero-Day Phishing Website Detection by Visual Similarity</a></li>
 <li><a href="https://www.usenix.org/conference/usenixsecurity22/presentation/liu-ruofan">Inferring Phishing Intention via Webpage Appearance and Dynamics: A Deep Vision Based Approach</a></li>
 </ol></details>
-<details><summary>How should I evaluate a detector?</summary><p>Trace when labels become available, how test examples are selected and how performance changes under different conditions.</p><ol>
+<details><summary><span aria-hidden="true">⚖️</span> How should I evaluate a detector?</summary><p>Trace when labels become available, how test examples are selected and how performance changes under different conditions.</p><ol>
 <li><a href="https://doi.org/10.1145/3373017.3373020">An Analysis of Phishing Blacklists: Google Safe Browsing, OpenPhish, and PhishTank</a></li>
 <li><a href="https://doi.org/10.1016/j.engappai.2021.104347">Towards benchmark datasets for machine learning based website phishing detection: An experimental study</a></li>
 <li><a href="https://scholar.google.com/scholar?q=Evaluating%20the%20Effectiveness%20and%20Robustness%20of%20Visual%20Similarity-based%20Phishing%20Detection%20Models">Evaluating the Effectiveness and Robustness of Visual Similarity-based Phishing Detection Models</a></li>
 </ol></details>
-<details><summary>Where do LLMs enter the decision?</summary><p>Compare a site-level verdict with brand knowledge and email analysis. Which evidence can a reader independently check?</p><ol>
+<details><summary><span aria-hidden="true">💬</span> Where do LLMs enter the decision?</summary><p>Compare a site-level verdict with brand knowledge and email analysis. Which evidence can a reader independently check?</p><ol>
 <li><a href="https://doi.org/10.48550/arxiv.2306.05816">Detecting Phishing Sites Using ChatGPT</a></li>
 <li><a href="https://www.usenix.org/conference/usenixsecurity24/presentation/li-yuexin">KnowPhish: Large Language Models Meet Multimodal Knowledge Graphs for Enhancing Reference-Based Phishing Detection</a></li>
 <li><a href="https://doi.org/10.48550/arxiv.2505.23803">MultiPhishGuard: An LLM-based Multi-Agent System for Phishing Email Detection</a></li>
 </ol></details>
-<h2>Browse the collection</h2><section class="controls"><label>Search references<input id="query" type="search" placeholder="Title, author, venue or year"></label><label>Research topic<select id="topic"><option value="">All topics</option>
+<h2><span aria-hidden="true">📚</span> Browse the collection</h2><section class="controls"><label>Search references<input id="query" type="search" placeholder="Title, author, venue or year"></label><label>Research topic<select id="topic"><option value="">All topics</option>
 <option>Surveys and field guides</option>
 <option>Datasets, feeds and benchmarks</option>
 <option>Attack measurement and robustness</option>
