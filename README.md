@@ -2,39 +2,53 @@
 
 A reading collection for people beginning research on phishing attacks and detection. Start with a question below, or browse the bibliography by topic.
 
-## Suggested reading paths
+<a id="suggested-reading-paths"></a>
+
+## 🧭 Suggested reading paths
 
 ### How do phishing sites persuade people?
 
 Read the original user study, then compare its findings with the longer review of how phishing experiments are designed.
 
-[Why phishing works](https://doi.org/10.1145/1124772.1124861) → [Sixteen Years of Phishing User Studies: What Have We Learned?](https://doi.org/10.1109/tdsc.2022.3151103)
+1. [Why phishing works](https://doi.org/10.1145/1124772.1124861)
+2. [Sixteen Years of Phishing User Studies: What Have We Learned?](https://doi.org/10.1109/tdsc.2022.3151103)
 
 ### What can a detector see?
 
 Compare page content, URL characters, visual similarity and page interaction. For each paper, write down the minimum input needed for one prediction.
 
-[Cantina: a content-based approach to detecting phishing web sites](https://doi.org/10.1145/1242572.1242659) → [URLNet: Learning a URL Representation with Deep Learning for Malicious URL Detection](https://arxiv.org/abs/1802.03162) → [VisualPhishNet: Zero-Day Phishing Website Detection by Visual Similarity](https://doi.org/10.1145/3372297.3417233) → [Inferring Phishing Intention via Webpage Appearance and Dynamics: A Deep Vision Based Approach](https://www.usenix.org/conference/usenixsecurity22/presentation/liu-ruofan)
+1. [Cantina: a content-based approach to detecting phishing web sites](https://doi.org/10.1145/1242572.1242659)
+2. [URLNet: Learning a URL Representation with Deep Learning for Malicious URL Detection](https://arxiv.org/abs/1802.03162)
+3. [VisualPhishNet: Zero-Day Phishing Website Detection by Visual Similarity](https://doi.org/10.1145/3372297.3417233)
+4. [Inferring Phishing Intention via Webpage Appearance and Dynamics: A Deep Vision Based Approach](https://www.usenix.org/conference/usenixsecurity22/presentation/liu-ruofan)
 
 ### How should I evaluate a detector?
 
 Trace when labels become available, how test examples are selected and how performance changes under different conditions.
 
-[An Analysis of Phishing Blacklists: Google Safe Browsing, OpenPhish, and PhishTank](https://doi.org/10.1145/3373017.3373020) → [Towards benchmark datasets for machine learning based website phishing detection: An experimental study](https://doi.org/10.1016/j.engappai.2021.104347) → [Evaluating the Effectiveness and Robustness of Visual Similarity-based Phishing Detection Models](https://scholar.google.com/scholar?q=Evaluating%20the%20Effectiveness%20and%20Robustness%20of%20Visual%20Similarity-based%20Phishing%20Detection%20Models)
+1. [An Analysis of Phishing Blacklists: Google Safe Browsing, OpenPhish, and PhishTank](https://doi.org/10.1145/3373017.3373020)
+2. [Towards benchmark datasets for machine learning based website phishing detection: An experimental study](https://doi.org/10.1016/j.engappai.2021.104347)
+3. [Evaluating the Effectiveness and Robustness of Visual Similarity-based Phishing Detection Models](https://scholar.google.com/scholar?q=Evaluating%20the%20Effectiveness%20and%20Robustness%20of%20Visual%20Similarity-based%20Phishing%20Detection%20Models)
 
 ### Where do LLMs enter the decision?
 
 Compare a site-level verdict with brand knowledge and email analysis. Which evidence can a reader independently check?
 
-[Detecting Phishing Sites Using ChatGPT](https://doi.org/10.48550/arxiv.2306.05816) → [KnowPhish: Large Language Models Meet Multimodal Knowledge Graphs for Enhancing Reference-Based Phishing Detection](https://www.usenix.org/conference/usenixsecurity24/presentation/li-yuexin) → [MultiPhishGuard: An LLM-based Multi-Agent System for Phishing Email Detection](https://doi.org/10.48550/arxiv.2505.23803)
+1. [Detecting Phishing Sites Using ChatGPT](https://doi.org/10.48550/arxiv.2306.05816)
+2. [KnowPhish: Large Language Models Meet Multimodal Knowledge Graphs for Enhancing Reference-Based Phishing Detection](https://www.usenix.org/conference/usenixsecurity24/presentation/li-yuexin)
+3. [MultiPhishGuard: An LLM-based Multi-Agent System for Phishing Email Detection](https://doi.org/10.48550/arxiv.2505.23803)
 
-## Browse the bibliography
+<a id="browse-the-bibliography"></a>
+
+## 📚 Browse the bibliography
 
 [Surveys and field guides](#surveys-and-field-guides) · [Datasets, feeds and benchmarks](#datasets-feeds-and-benchmarks) · [Attack measurement and robustness](#attack-measurement-and-robustness) · [People, warnings and authentication](#people-warnings-and-authentication) · [Email, SMS and social engineering](#email-sms-and-social-engineering) · [LLMs and multimodal reasoning](#llms-and-multimodal-reasoning) · [Blocklists, allowlists and reputation](#blocklists-allowlists-and-reputation) · [Visual identity and reference matching](#visual-identity-and-reference-matching) · [URLs, domains and lexical features](#urls-domains-and-lexical-features) · [Website content and classification](#website-content-and-classification)
 
 178 distinct entries from the Zotero collection. Each entry appears under its first matching topic here. The searchable edition supports overlapping topics. Dates and venues follow the export. Entries without a source URL link to a title search.
 
-## Surveys and field guides
+<a id="surveys-and-field-guides"></a>
+
+## 🗺️ Surveys and field guides
 
 Start here for terminology, threat models and comparisons across detection methods.
 
@@ -62,7 +76,9 @@ Start here for terminology, threat models and comparisons across detection metho
 
 - [SoK: PHILTER: Uncovering Security and Functional Gaps in AI-based Phishing Website Detection Literature via an LLM-based Reasoning Framework | USENIX](https://www.usenix.org/conference/usenixsecurity26/presentation/alam)
 
-## Datasets, feeds and benchmarks
+<a id="datasets-feeds-and-benchmarks"></a>
+
+## 🗃️ Datasets, feeds and benchmarks
 
 Check how examples were collected, labelled and split. A phishing feed records observed attacks, while an evaluation dataset also needs a sampling protocol.
 
@@ -98,7 +114,9 @@ Check how examples were collected, labelled and split. A phishing feed records o
 
 - [Q4 2022 Malware and Phishing Report: Phishing Volumes Increase 36% QoQ](https://www.vadesecure.com/en/blog/q4-2022-phishing-and-malware-report)
 
-## Attack measurement and robustness
+<a id="attack-measurement-and-robustness"></a>
+
+## 🛡️ Attack measurement and robustness
 
 Compare the assumed attacker capabilities, the evidence evaluated and whether a study measures effects on users or on detectors.
 
@@ -156,7 +174,9 @@ Compare the assumed attacker capabilities, the evidence evaluated and whether a 
 
 - [Phishing in Wonderland: Evaluating Learning-Based Ethereum Phishing Transaction Detection and Pitfalls](https://www.ndss-symposium.org/ndss-paper/phishing-in-wonderland-evaluating-learning-based-ethereum-phishing-transaction-detection-and-pitfalls/) — NDSS Symposium
 
-## People, warnings and authentication
+<a id="people-warnings-and-authentication"></a>
+
+## 👥 People, warnings and authentication
 
 Ask who makes the final decision and how the study measures comprehension, behaviour or susceptibility.
 
@@ -188,7 +208,9 @@ Ask who makes the final decision and how the study measures comprehension, behav
 
 - [Two-level authentication approach to protect from phishing attacks in real time](https://link.springer.com/article/10.1007/s12652-017-0616-z)
 
-## Email, SMS and social engineering
+<a id="email-sms-and-social-engineering"></a>
+
+## ✉️ Email, SMS and social engineering
 
 Follow the message from delivery to the requested action. Look for evidence from wording, sender identity and links.
 
@@ -206,7 +228,9 @@ Follow the message from delivery to the requested action. Look for evidence from
 
 - [LMs go Phishing: Adapting Pre-trained Language Models to Detect Phishing Emails](https://ieeexplore.ieee.org/abstract/document/10101955?casa_token=5_6Rm8LdVc0AAAAA:XXCwPcDBXQ5QGHoEgju7DydUlRx-cgBiQx4p8bhh6FPNIPejF9m1caLJBTbhu_CgT3r8I0U)
 
-## LLMs and multimodal reasoning
+<a id="llms-and-multimodal-reasoning"></a>
+
+## 💬 LLMs and multimodal reasoning
 
 Compare the inputs each model sees and the evidence it gives for a verdict.
 
@@ -220,7 +244,9 @@ Compare the inputs each model sees and the evidence it gives for a verdict.
 
 - [MemoPhishAgent: Memory-Augmented Multi-Modal LLM Agent for Phishing URL Detection](https://arxiv.org/abs/2602.21394) — 2026, arXiv preprint arXiv:2602.21394
 
-## Blocklists, allowlists and reputation
+<a id="blocklists-allowlists-and-reputation"></a>
+
+## 📋 Blocklists, allowlists and reputation
 
 Ask when an address first became known and how that timing affects coverage.
 
@@ -240,7 +266,9 @@ Ask when an address first became known and how that timing affects coverage.
 
 - [An Enhanced Blacklist Method to Detect Phishing Websites](https://doi.org/10.1007/978-3-319-72598-7_20) — ResearchGate
 
-## Visual identity and reference matching
+<a id="visual-identity-and-reference-matching"></a>
+
+## 👁️ Visual identity and reference matching
 
 Look at what is matched across pages, how the claimed brand is identified and how the domain is checked.
 
@@ -312,7 +340,9 @@ Look at what is matched across pages, how the claimed brand is identified and ho
 
 - [Phishing webpage detection based on global and local visual similarity](https://doi.org/10.1016/j.eswa.2024.124120) — 2024, Expert Systems with Applications
 
-## URLs, domains and lexical features
+<a id="urls-domains-and-lexical-features"></a>
+
+## 🔗 URLs, domains and lexical features
 
 Identify which signals can be computed from the address alone and which require external lookups or page content.
 
@@ -352,7 +382,9 @@ Identify which signals can be computed from the address alone and which require 
 
 - [Toward More Generalized Malicious URL Detection Models](https://doi.org/10.1609/aaai.v38i19.30161) — 2024, Proceedings of the AAAI Conference on Artificial Intelligence
 
-## Website content and classification
+<a id="website-content-and-classification"></a>
+
+## 📄 Website content and classification
 
 Compare the evidence available to each detector, including HTML, page behaviour and engineered features.
 
